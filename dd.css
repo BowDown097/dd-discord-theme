@@ -59,7 +59,7 @@ article[class*="embedFull"], .wrapper_efe67f {
 
 /* Auto Complete */
 .autocomplete_df266d {
-    background-color: var(--dusk-background-1);
+    background-color: var(--dusk-background-1) !important;
 }
 
 .clickable_f8437d[aria-disabled=false] > .base__76a71:hover,
@@ -92,7 +92,7 @@ article[class*="embedFull"], .wrapper_efe67f {
 }
 
 section[class*="panels"] > div, .container_d667ff  {
-    background-color: var(--dusk-background-1);
+    background-color: var(--dusk-background-1) !important;
 }
 
 /* Channels Selected */
@@ -102,12 +102,16 @@ section[class*="panels"] > div, .container_d667ff  {
 }
 
 /* Friends tab*/
-.container__5c7e7 {
+.themed_b152d4 {
     background: var(--dm-chat-bg);
 }
 
 .inset__0bfb3 {
-    background-color: var(--dusk-background-1);
+    background-color: var(--dusk-background-1) !important;
+}
+
+.children__32014:after {
+    background: linear-gradient(to right,rgba(54,57,63,0)0%,var(--dm-chat-bg)100%);
 }
 
 /* Guilds */
@@ -131,11 +135,11 @@ div[class*="standardSidebarView"] {
 
 .side_b4b3f6 .themed_b957e8.item__48dda:hover,
 .topPill__0cdf1 .themed_b957e8.item__48dda:hover {
-    background-color: var(--dusk-activate);
+    background-color: var(--dusk-activate) !important;
 }
 
 .cardPrimary_cb7a0e {
-    background-color: var(--dusk-background-2);
+    background-color: var(--dusk-background-2) !important;
 }
 
 /* Buttons */
