@@ -178,22 +178,22 @@ div[class*="numberBadge"] {
     --height2: 85%;
 }
 
-.layers__12c9f {
+.layers__1c917 {
     align-items: center;
     justify-content: center;
 }
 
-.layers__12c9f > .layer_e552e0:first-child {
+.layers__1c917 > .layer__2efaa:first-child {
     opacity: 1 !important;
     transform: none !important;
 }
 
-.layers__12c9f > .layer_e552e0.stop-animations:first-child {
+.layers__1c917 > .layer__2efaa.stop-animations:first-child {
     z-index: 1;
     transition: 250ms ease-in;
 }
 
-.layers__12c9f > .layer_e552e0:nth-child(2)::before {
+.layers__1c917 > .layer__2efaa:nth-child(2)::before {
     content: "";
     position: absolute;
     top: calc((100% - var(--height2)) / -1); 
@@ -207,7 +207,7 @@ div[class*="numberBadge"] {
     transition: opacity 350ms ease;
 }
 
-.layers__12c9f > .layer_e552e0:nth-child(2) {
+.layers__1c917 > .layer__2efaa:nth-child(2) {
     width: var(--width2);
     height: var(--height2);
     top: unset;
