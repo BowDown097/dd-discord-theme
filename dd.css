@@ -103,7 +103,7 @@ section[class*="panels"] > div, .container_d667ff  {
 
 /* Friends tab*/
 .themed_b152d4 {
-    background: var(--dm-chat-bg);
+    background-color: var(--dm-chat-bg) !important;
 }
 
 .inset__0bfb3 {
@@ -111,7 +111,7 @@ section[class*="panels"] > div, .container_d667ff  {
 }
 
 .children__32014:after {
-    background: linear-gradient(to right,rgba(54,57,63,0)0%,var(--dm-chat-bg)100%);
+    background: linear-gradient(to right,rgba(54,57,63,0)0%,var(--dm-chat-bg)100%) !important;
 }
 
 /* Guilds */
