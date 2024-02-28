@@ -38,11 +38,6 @@ body {
     --background-modifier-selected: var(--dusk-background-1);
 }
 
-/* Core */
-#app-mount, [class*="typeWindows_"] {
-    background-color: #1a1a1a;
-}
-
 /* Chat */
 [class*="chat__"] {
     background-color: var(--dm-chat-bg);
