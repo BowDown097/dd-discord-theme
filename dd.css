@@ -143,7 +143,7 @@ nav[class*="guilds_"] {
 }
 
 /* search */
-[class*="searchBar_"] {
+[class*="search_"] > [class*="searchBar_"] {
     background-color: var(--dusk-activate);
 }
 
