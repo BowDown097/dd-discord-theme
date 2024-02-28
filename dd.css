@@ -158,17 +158,17 @@ nav[class*="guilds_"] {
     justify-content: center;
 }
 
-.layers__1c917 > .layer_f7d46a:first-child {
+.layers__1c917 > div:first-child {
     opacity: 1 !important;
     transform: none !important;
 }
 
-.layers__1c917 > .layer_f7d46a.stop-animations:first-child {
+.layers__1c917 > .stop-animations:first-child {
     z-index: 1;
     transition: 250ms ease-in;
 }
 
-.layers__1c917 > .layer_f7d46a:nth-child(2)::before {
+.layers__1c917 > div:nth-child(2)::before {
     content: "";
     position: absolute;
     top: -15%; 
@@ -182,7 +182,7 @@ nav[class*="guilds_"] {
     transition: opacity 350ms ease;
 }
 
-.layers__1c917 > .layer_f7d46a:nth-child(2) {
+.layers__1c917 > div:nth-child(2) {
     width: 60%;
     height: 85%;
     top: unset;
