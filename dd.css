@@ -81,7 +81,7 @@ code {
     background-color: var(--dusk-background-2);
 }
 
-section[class*="panels"] > div {
+section[class*="panels"] [class*="container"] {
     background-color: var(--dusk-background-1) !important;
 }
 
