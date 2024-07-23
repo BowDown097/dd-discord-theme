@@ -39,26 +39,26 @@ body {
 }
 
 /* Chat */
-[class^="chat__"] {
+[class*="chat__"] {
     background-color: var(--dm-chat-bg);
 }
 
-[class^="channelTextArea_"] > div {
+[class*="channelTextArea_"] > div {
     background-color: #171717;
 }
 
 /* Embeds */
-[class^="embedFull_"] {
+[class*="embedFull_"] {
     background-color: var(--dusk-background-2);
 }
 
 /* Auto Complete */
-[class^="autocomplete_"] {
+[class*="autocomplete_"] {
     background-color: var(--dusk-background-1) !important;
 }
 
-[class^="autocompleteRow_"][aria-disabled=false] > div:hover,
-[class^="autocompleteRow_"][aria-selected=true] > div {
+[class*="autocompleteRow_"][aria-disabled=false] > div:hover,
+[class*="autocompleteRow_"][aria-selected=true] > div {
     background-color: var(--dusk-activate);
 }
 
@@ -68,73 +68,74 @@ code {
 }
 
 /* Members */
-[class^="members_"],
-[class^="members_"] [class^="member_"] {
+:has(> [class*="membersWrap"]),
+[class*="members_"],
+[class*="members_"] [class*="member_"] {
     background: var(--dusk-background-2);
 }
 
-[class^="members_"] [class^="member_"]:hover > div {
+[class*="members_"] [class*="member_"]:hover > div {
     background-color: var(--dusk-activate) !important;
 }
 
 /* Channels Sidebar */
-[class^="sidebar_"] {
+[class*="sidebar_"] {
     background-color: var(--dusk-background-2);
 }
 
-section[class^="panels_"] [class^="container_"],
-[class^="activityPanel_"] {
+section[class*="panels_"] [class*="container_"],
+[class*="activityPanel_"] {
     background-color: var(--dusk-background-1) !important;
 }
 
 /* Channels Selected */
-[class^="wrapper_"]:hover [class^="link_"] {
+[class*="wrapper_"]:hover [class*="link_"] {
     background-color: var(--dusk-activate);
     transition: .1s cubic-bezier(0.53, 0.07, 0.78, 1.06);
 }
 
 /* Friends tab */
-section[class^="themed_"] {
+section[class*="themed_"] {
     background-color: var(--dm-chat-bg) !important;
 }
 
-[class^="nowPlayingColumn_"] [class^="inset_"] {
+[class*="nowPlayingColumn_"] [class*="inset_"] {
     background-color: var(--dusk-background-1) !important;
 }
 
-section[class^="themed_"] [class^="children_"]:after {
+section[class*="themed_"] [class*="children_"]:after {
     background: linear-gradient(to right, rgba(54, 57, 63, 0) 0%, var(--dm-chat-bg) 100%) !important;
 }
 
 /* Guilds */
-nav[class^="guilds_"] {
+nav[class*="guilds_"] {
     background-color: var(--dusk-background-1);
 }
 
-[class^="expandedFolderBackground_"] {
+[class*="expandedFolderBackground_"] {
     background-color: var(--dusk-activate)
 }
 
 /* Settings */
-[class^="standardSidebarView_"] {
+[class*="standardSidebarView_"] {
     background-color: var(--dusk-background-2);
 }
 
-[class^="contentRegion_"] {
+[class*="contentRegion_"] {
     background-color: var(--dusk-background-1);
     --background-tertiary: var(--dusk-background-2);
 }
 
-[class^="side_"] [class^="themed_"]:hover {
+[class*="side_"] [class*="themed_"]:hover {
     background-color: var(--dusk-activate) !important;
 }
 
-[class^="cardPrimary_"] {
+[class*="cardPrimary_"] {
     background-color: var(--dusk-background-2) !important;
 }
 
 /* Mention Badge */
-[class^="numberBadge_"] {
+[class*="numberBadge_"] {
     background-color: #f04747;
     -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, .25), inset 0 1px 0 hsla(0, 0%, 100%, .15);
     box-shadow: 0 1px 0 rgba(0, 0, 0, .25), inset 0 1px 0 hsla(0, 0%, 100%, .15);
@@ -145,12 +146,12 @@ nav[class^="guilds_"] {
 }
 
 /* search */
-[class^="search_"] > [class^="searchBar_"] {
+[class*="search_"] > [class*="searchBar_"] {
     background-color: var(--dusk-activate);
 }
 
 /* emoji layer */
-[class^="expressionPickerPositionLayer_"] [class^="contentWrapper_"] {
+[class*="expressionPickerPositionLayer_"] [class*="contentWrapper_"] {
     background-color: var(--background-floating);
 }
 
