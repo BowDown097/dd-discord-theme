@@ -68,7 +68,7 @@ code {
 }
 
 /* Members */
-:has(> [class*="membersWrap"]),
+:has(> [class*="membersWrap_"]),
 [class*="members_"],
 [class*="members_"] [class*="member_"] {
     background: var(--dusk-background-2);
@@ -156,22 +156,19 @@ nav[class*="guilds_"] {
 }
 
 /* Old Settings Modal, originally created by Zerebos */
-[class*="layers_"]:has(.stop-animations) {
+.layers__960e4 {
     align-items: center;
     justify-content: center;
 }
 
-[class*="layers_"]:has(.stop-animations) > div:first-child {
+.layers__960e4 > .stop-animations:first-child {
     opacity: 1 !important;
     transform: none !important;
-}
-
-[class*="layers_"]:has(.stop-animations) > .stop-animations:first-child {
     z-index: 1;
     transition: 250ms ease-in;
 }
 
-[class*="layers_"]:has(.stop-animations) > div:nth-child(2)::before {
+.layers__960e4 > div:nth-child(2)::before {
     content: "";
     position: absolute;
     top: -15%; 
@@ -185,7 +182,7 @@ nav[class*="guilds_"] {
     transition: opacity 350ms ease;
 }
 
-[class*="layers_"]:has(.stop-animations) > div:nth-child(2) {
+.layers__960e4 > div:nth-child(2) {
     width: 60%;
     height: 85%;
     top: unset;
