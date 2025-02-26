@@ -83,7 +83,7 @@ code {
     background-color: var(--dusk-background-2);
 }
 
-section[class*="panels_"] [class*="content_"],
+section[class*="panels_"] [class*="container_"],
 [class*="activityPanel_"] {
     background-color: var(--dusk-background-1) !important;
 }
