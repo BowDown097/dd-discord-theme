@@ -38,13 +38,19 @@ body {
     --background-modifier-selected: var(--dusk-background-1);
 }
 
+[class*="subtitleContainer_"] {
+    background-color: var(--dusk-background-2);
+}
+
 /* Chat */
-[class*="chat__"] {
-    background-color: var(--dm-chat-bg);
+[class*="chat_"],
+[class*="chatContent_"],
+[class*="chatContent_"] [class*="scrollerInner_"] [class*="wrapper_"] {
+    background-color: var(--dusk-background-1) !important;
 }
 
 [class*="channelTextArea_"] > div {
-    background-color: #171717;
+    background-color: var(--dusk-activate) !important;
 }
 
 /* Embeds */
@@ -79,11 +85,12 @@ code {
 }
 
 /* Channels Sidebar */
-[class*="sidebar_"] {
-    background-color: var(--dusk-background-2);
+[class*="sidebar_"], [class*="sidebarList_"] > nav,
+[class*="sidebar_"], [class*="sidebarList_"] > nav > [class*="scroller__"] {
+    background-color: var(--dusk-background-2) !important;
 }
 
-section[class*="panels_"] [class*="container_"],
+section[class*="panels_"],
 [class*="activityPanel_"] {
     background-color: var(--dusk-background-1) !important;
 }
@@ -95,35 +102,31 @@ section[class*="panels_"] [class*="container_"],
 }
 
 /* Friends tab */
-section[class*="themed_"] {
-    background-color: var(--dm-chat-bg) !important;
+[class*="container_"]:has(section[class*="themed_"]) {
+    background-color: var(--dusk-background-2) !important;
 }
 
+[class*="tabBody__"],
 [class*="nowPlayingColumn_"] [class*="inset_"] {
     background-color: var(--dusk-background-1) !important;
 }
 
 section[class*="themed_"] [class*="children_"]:after {
-    background: linear-gradient(to right, rgba(54, 57, 63, 0) 0%, var(--dm-chat-bg) 100%) !important;
+    background: linear-gradient(to right, rgba(54, 57, 63, 0) 0%, var(--dusk-background-1) 100%) !important;
 }
 
 /* Guilds */
-nav[class*="guilds_"] {
-    background-color: var(--dusk-background-1);
-}
-
 [class*="expandedFolderBackground_"] {
-    background-color: var(--dusk-activate)
+    background-color: var(--dusk-activate) !important;
 }
 
 /* Settings */
 [class*="standardSidebarView_"] {
-    background-color: var(--dusk-background-2);
+    background-color: var(--dusk-background-2) !important;
 }
 
-[class*="contentRegion_"] {
-    background-color: var(--dusk-background-1);
-    --background-tertiary: var(--dusk-background-2);
+[class*="sidebarRegionScroller_"], [class*="contentRegionScroller_"] {
+    background-color: var(--dusk-background-1) !important;
 }
 
 [class*="side_"] [class*="themed_"]:hover {
@@ -146,8 +149,17 @@ nav[class*="guilds_"] {
 }
 
 /* search */
-[class*="search_"] > [class*="searchBar_"] {
+[class*="search_"] > [class*="searchBar_"],
+[class*="searchResultsWrap_"] [class*="searchResult_"] {
     background-color: var(--dusk-activate);
+}
+
+[class*="queryContainer_"], [class*="resultsGroup_"] {
+    background-color: var(--dusk-background-1) !important;
+}
+
+[class*="searchResultsWrap_"] {
+    background-color: var(--dusk-background-2) !important;
 }
 
 /* emoji layer */
