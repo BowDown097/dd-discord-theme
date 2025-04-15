@@ -45,7 +45,8 @@ body {
 /* Chat */
 [class*="chat_"],
 [class*="chatContent_"],
-[class*="chatContent_"] [class*="scrollerInner_"] [class*="wrapper_"] {
+[class*="chatContent_"] [class*="scrollerInner_"] > [class*="wrapper_"],
+[class*="chatContent_"] [class*="scrollerInner_"] > [class*="wrapper_"] > [class*="wrapper_"] {
     background-color: var(--dusk-background-1) !important;
 }
 
