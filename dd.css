@@ -38,7 +38,8 @@ body {
     --background-modifier-selected: var(--dusk-background-1);
 }
 
-[class*="subtitleContainer_"] {
+[class*="subtitleContainer_"],
+[class*="subtitleContainer_"] > section {
     background-color: var(--dusk-background-2);
 }
 
@@ -50,7 +51,8 @@ body {
     background-color: var(--dusk-background-1) !important;
 }
 
-[class*="channelTextArea_"] > div {
+[class*="channelTextArea_"] > div,
+[class*="message_"]:hover {
     background-color: var(--dusk-activate) !important;
 }
 
@@ -87,11 +89,13 @@ code {
 
 /* Channels Sidebar */
 [class*="sidebar_"], [class*="sidebarList_"] > nav,
-[class*="sidebar_"], [class*="sidebarList_"] > nav > [class*="scroller__"] {
+[class*="sidebar_"], [class*="sidebarList_"] > nav > [class*="scroller__"],
+ul[data-list-id="guildsnav"] > [class*="itemsContainer_"] [class*="stack_"] {
     background-color: var(--dusk-background-2) !important;
 }
 
 section[class*="panels_"],
+section[class*="panels_"] > [class*="container_"],
 [class*="activityPanel_"] {
     background-color: var(--dusk-background-1) !important;
 }
@@ -103,7 +107,8 @@ section[class*="panels_"],
 }
 
 /* Friends tab */
-[class*="container_"]:has(section[class*="themed_"]) {
+[class*="container_"]:has(section[class*="themed_"]),
+[class*="container_"][aria-label="Friends"] > section {
     background-color: var(--dusk-background-2) !important;
 }
 
