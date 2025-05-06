@@ -40,7 +40,7 @@ body {
 
 [class*="subtitleContainer_"],
 [class*="subtitleContainer_"] > section {
-    background-color: var(--dusk-background-2);
+    background-color: var(--dusk-background-2) !important;
 }
 
 /* Chat */
